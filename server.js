@@ -2,8 +2,6 @@ import express from 'express'
 import cors from 'cors'
 import { PrismaClient } from '@prisma/client'
 
-
-
 const prisma = new PrismaClient()
 const app = express()
 const PORT = 3000
@@ -66,6 +64,3 @@ app.delete('/usuarios/:id', async (req, res) => {
 
     res.status(200).json({message: "Usuário deletado com sucesso!"})
 })
-
-
-// fabricyovm - mongodb
